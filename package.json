@@ -1,0 +1,16 @@
+{
+  "name": "portal_noticias",
+  "version": "1.0.0",
+  "description": "Site de noticias",
+  "main": "noticias.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/jonathansc92/node_js.git"
+  },
+  "author": "Jonathan",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/jonathansc92/node_js#readme"
+}
