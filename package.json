@@ -12,5 +12,8 @@
   },
   "author": "Jonathan",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/jonathansc92/node_js#readme"
+  "homepage": "https://bitbucket.org/jonathansc92/node_js#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
