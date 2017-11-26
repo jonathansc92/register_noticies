@@ -2,11 +2,25 @@
 	<html lang="pt-br">
 		<head>
 			<meta charset="utf-8"/>
-			<title>Formul·rio de cadastro de NotÌcia</title>
+			<title>Formul√°io de cadastro de Not√≠ia</title>
 		</head>
 	<body>
 
-		<h1>Adicionar notÌcia</h1>
+		<h1>Adicionar not√≠cia</h1>
+		<br />
+
+		<form action='/noticias/salvar' method='POST'>
+			<label>T√≠tulo</label>
+			<input type='text' id='titulo' name='titulo' placeholder='Titulo da noticia'/>
+			<br />
+
+			<label>Not√≠cia</label>
+			<textarea id='noticia' name='noticia' rows='5' cols='30'></textarea>
+			<br />
+
+			<input type='submit' value='Salvar' id='salvar' />
+
+		</form>
 
 	</body>
 </html>
