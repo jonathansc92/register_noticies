@@ -16,6 +16,7 @@
 		.include('app/routes')
 		.then('config/db.js')
 		.then('app/models')
+		.then('app/controllers')
 		.into(app);
 
 	module.exports = app;
