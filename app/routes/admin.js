@@ -7,13 +7,18 @@ module.exports = function(app){
 	});
 
 	app.post('/noticias/salvar', function(req, res){
-			var noticias = req.body;
-			res.send(noticias);
-
+		var noticia = req.body;
 			//conexao
 			//model
 
 			//salvarNoticia
+
+		var connection = app.config.db();	
+		var noticiasModel = app.app.models.noticiasModel;
+
+		noticiasModel.salvarNoticia(noticia, connection,  function(error, result){
+			res.redirect('/noticias');
+		});
 
 	});
 };
