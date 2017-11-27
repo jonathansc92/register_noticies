@@ -2,7 +2,7 @@ module.exports = function(app){
 
 	app.get('/formulario_inclusao_noticia', function(req, res){
 
-		res.render('admin/form_add_noticia');
+		res.render('admin/form_add_noticia',{validacao:{}, noticia: {}});
 
 	});
 
@@ -22,7 +22,7 @@ module.exports = function(app){
 		console.log(errors);
 
 		if(errors){
-			res.render('admin/form_add_noticia', {validacao: errors});
+			res.render('admin/form_add_noticia', {validacao: errors, noticia: noticia});
 			return;
 		}
 
