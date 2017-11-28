@@ -17,6 +17,12 @@
 		this._connection.query('insert into noticias set ? ', noticia, callback)
 	}
 
+	NoticiasDAO.prototype.getLastFive = function(callback){
+		//console.log(noticia);
+		this._connection.query('SELECT * FROM noticias ORDER BY data_criacao DESC LIMIT 5',  callback);
+	}
+
+
 
 module.exports = function(){
 
