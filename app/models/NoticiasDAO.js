@@ -8,8 +8,9 @@
 		this._connection.query('select * from noticias ORDER BY data_criacao DESC', callback);
 	}
 
-	NoticiasDAO.prototype.getNoticia = function(callback){
-		this._connection.query('select * from noticias where id = 2', callback);
+	NoticiasDAO.prototype.getNoticia = function(id, callback){
+		//console.log(id.id)
+		this._connection.query('select * from noticias where id = ' + id.id, callback);
 	}
 
 	NoticiasDAO.prototype.salvarNoticia = function(noticia, callback){
